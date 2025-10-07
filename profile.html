@@ -10,7 +10,7 @@
     <div class="bg ">
         <h1>Profile Page</h1>
         
-        <div>
+        <form>
         <table>
             <p class="p">Personal Information</p>
             <div>
@@ -28,13 +28,19 @@
                 <td><label class="pi-1">Father Name: </label></td>
                 <td><input type="text" name="father_name" value="Buchi Reddy Karnati" class="pi"></td>
             </tr>
-            <tr>
+            <tr> 
                 <td><lable class="pi-1">Gender: </lable></td>
-                <td><input type="gender"></td>
+                <td><input type="radio" name="gender" value="Male">Male</td>
+                <td><input type="radio" name="gender" value="Male">Female</td>
+            </tr>
+            <tr>
+                <td><label class="pi-1">Date of Birth: </label></td>
+                <td><input type="date" name="dob" value="06-08-2006"></td>
+            </tr>
 
 
         </table>
-        </div>
+        </form>
         
 
     </div>

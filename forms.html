@@ -4,38 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample form</title>
+    <link rel="stylesheet" href="f.css">
 </head>
 <body>
-<div style="background-color: rgb(67, 227, 255);">
-    
-<form>
+    <div>
+        <h1>Fill the Form</h1>
+    </div>
+    <div class="pd">
+        <h1>Personal Details</h1>
+    </div>
+<div class="bg">
+<form action="#" method="get" target="_blank">
     <table>
         <tr>
-            <td><label>First Name: </label></td>
-            <td><input type="text" name="first_name"></td>
+            <td><label class="l">First Name: </label></td>
+            <td><input class="c" type="text" name="first_name"></td>
         </tr>
         <tr>
-            <td><label>Last Name:</label></td>
-            <td><input type="text" name="last_name"></td>
+            <td><label class="l">Last Name:</label></td>
+            <td><input class="c" type="text" name="last_name"></td>
         </tr>
         <tr>
-            <td><label>Address: </label></td>
-            <td><textarea rows="3" cols="20"></textarea></td>
+            <td><label class="l">Address: </label></td>
+            <td><textarea class="c" rows="3" cols="20"></textarea></td>
         </tr>
         <tr>
-            <td><label name="password">Password: </label></td>
-            <td><input type="password" name="pwd"></td>
+            <td><label class="l" name="password">Password: </label></td>
+            <td><input class="c" type="password" name="pwd"></td>
         </tr>
         <tr>
-            <td><p>Gender: </p></td>
+            <td><p class="l">Gender: </p></td>
             <td>
-                <input type="radio" name="gender">
-                <label for="male">Male</label>
+                <input type="radio" class="c" name="gender">
+                <label for="male" class="c">Male</label>
                 <input type="radio" name="gender">
                 <label for="female" name="gender">Female</label>
             </td>
         <tr>
-            <td><p>Choose your favourite language: </p></td>
+            <td><p class="l">Choose your favourite language: </p></td>
             <td>
                 <input type="radio" name="language">
                 <label for="html">HTML</label><br>
@@ -47,12 +53,12 @@
         </tr>
         <tr>
             <td>
-                <label>Email :</label>
+                <label class="l">Email :</label>
             </td>
-            <td><input type="email" name="email"></td>
+            <td><input type="email" class="c" name="email"></td>
         </tr>
         <tr>
-            <td><label>Hobbies: </label></td>
+            <td><label class="l">Hobbies: </label></td>
             <td>
                 <input type="checkbox" name="hb">
                 <label for="reading">Reading</label>
@@ -72,37 +78,37 @@
         </tr>
         <tr>
             <td>
-                <label>Choose your favourite color: </label>
+                <label class="l">Choose your favourite color: </label>
             
             </td>
             <td><input type="color" name="fc"></td>
         </tr>
         <tr>
-            <td><label>Date of birth</label></td>
+            <td><label class="l">Date of birth</label></td>
             <td><input type="date" name="dob" max="2006-08-06" min="1947-01-01"></td>
         </tr>
         <tr>
-            <td><label>Date and Time</label></td>
+            <td><label class="l">Date and Time</label></td>
             <td><input type="datetime-local" name="dt"></td>
         </tr>
         <tr>
-            <td><lable>Select file:</lable></td>
+            <td><lable class="l">Select file:</lable></td>
             <td><input type="file" name="file"></td>
         </tr>
         <tr>
-            <td>Hidden Fields</td>
+            <td class="l">Hidden Fields</td>
             <td><input type="hidden" id="cust" name="cust" value="1154"></td>
         </tr>
         <tr>
-            <td><lable>Month and Year</lable></td>
+            <td><lable class="l">Month and Year</lable></td>
             <td><input type="month" name="m"></td>
         </tr>
         <tr>
-            <td><label>Enter age:</label></td>
+            <td><label class="l">Enter age:</label></td>
             <td><input type="number" max="60" min="18"></td>
         </tr>
         <tr>
-            <td>Country: </td>
+            <td class="l">Country: </td>
             <td>
                 <select>
                     <option value="india">India</option>
@@ -113,11 +119,11 @@
             </td>
         </tr>
         <tr>
-            <td><lable>Sample image</lable></td>
+            <td><lable class="l">Sample image</lable></td>
             <td><img src="https://res.cloudinary.com/duokznlha/image/upload/v1749364105/PicRetouch_20250608_104524131_buuqji.png" style="height:200px; width:150px;"></td>
         </tr>
         <tr>
-            <td>Option Group : </td>
+            <td class="l">Option Group : </td>
             <td>
                 <select>
                     <optgroup label="Mobiles">
@@ -134,7 +140,7 @@
         </tr>
 
 </table>
-    </div>
+</div>
 </body>
 
 </form>
